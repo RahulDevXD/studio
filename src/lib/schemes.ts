@@ -1,0 +1,511 @@
+import type { Scheme } from './types';
+
+export const schemes: Scheme[] = [
+  {
+    id: 1,
+    slug: 'annadata-sukhibhava-scheme',
+    name: 'Annadata Sukhibhava Scheme',
+    governingBody: 'Andhra Pradesh Govt.',
+    sector: 'Agriculture',
+    targetBeneficiary: 'Farmers (including Tenant Farmers)',
+    casteEligibility: ['General'],
+    content: {
+      overview:
+        "A flagship program of the Andhra Pradesh government, replacing YSR Rythu Bharosa to provide enhanced financial assistance to farmers for crop investment costs, aiming to reduce debt and boost agricultural productivity. It supports all farmer categories, including tenant farmers.",
+      status:
+        "Actively being implemented in 2025. The government has committed to its rollout, with the first phase of funds scheduled for disbursement on August 2, 2025. A rigorous pre-verification process is underway to ensure aid reaches all eligible farmers.",
+      benefits: [
+        'Total financial assistance of ₹20,000 per farming family per year.',
+        '1st Installment: ₹7,000 (₹5,000 state + ₹2,000 central).',
+        '2nd Installment: ₹5,000.',
+        '3rd Installment: ₹4,000.',
+      ],
+      eligibility: [
+        'Applicable to all eligible farmers in Andhra Pradesh.',
+        'Includes all tenant farmers and farmers with lands not yet listed in Webland records.',
+        'Beneficiaries must have an active bank account linked with their Aadhaar number (NPCI mapped).',
+      ],
+      applicationProcess: [
+        'Government uses existing farmer database for initial identification.',
+        'Pre-verification is conducted to identify data discrepancies.',
+        'Lists of farmers with issues are available at local Rythu Seva Kendras (RSKs).',
+        'Affected farmers must visit their nearest RSK or bank to complete eKYC and link Aadhaar.',
+        'Grievances can be registered at RSKs.',
+      ],
+      checkStatus:
+        "Verify eligibility and payment status via the 'Know Your Status' feature on the annadatasukhibhava.ap.gov.in portal, by sending Aadhaar to 'Mana Mitra' WhatsApp number (9552300009), calling 155251, or checking lists at local RSKs.",
+    },
+  },
+  {
+    id: 2,
+    slug: 'pm-kisan-samman-nidhi',
+    name: 'PM-Kisan Samman Nidhi',
+    governingBody: 'Central Govt.',
+    sector: 'Agriculture',
+    targetBeneficiary: 'Small & Marginal Farmers',
+    casteEligibility: ['General'],
+    content: {
+      overview:
+        "A Central Sector scheme to supplement the financial needs of all landholding farmer families for agricultural inputs and domestic needs.",
+      status:
+        "Active and ongoing. In Andhra Pradesh, it converges with the Annadata Sukhibhava scheme.",
+      benefits: [
+        'Direct income support of ₹6,000 per year per family.',
+        'Disbursed in three equal four-monthly installments of ₹2,000 each via DBT.',
+      ],
+      eligibility: [
+        'Open to all landholding farmer families with cultivable land.',
+        'Exclusion criteria apply for institutional landholders, certain government employees/pensioners, professionals paying income tax, and those holding constitutional posts.',
+      ],
+      applicationProcess: [
+        'Self-register through the official PM-KISAN portal (pmkisan.gov.in).',
+        'Alternatively, approach local patwari, revenue officials, or Common Service Centers (CSCs).',
+        'Mandatory eKYC is required.',
+      ],
+      documents: [
+        'Aadhaar Card (mandatory)',
+        'Landholding papers',
+        'Bank account details',
+      ],
+      checkStatus:
+        "Check status on the PM-KISAN portal under 'Know Your Status' using registration or mobile number.",
+    },
+  },
+  {
+    id: 3,
+    slug: 'national-livestock-mission',
+    name: 'National Livestock Mission (NLM)',
+    governingBody: 'Central Govt.',
+    sector: 'Animal Husbandry',
+    targetBeneficiary: 'Entrepreneurs, FPOs, SHGs',
+    casteEligibility: ['General'],
+    content: {
+      overview:
+        "A centrally sponsored scheme to foster sustainable development of the livestock sector, generate employment through entrepreneurship, and enhance production of meat, eggs, milk, wool, and fodder.",
+      status:
+        "Actively implemented. The primary portal for applications is nlm.udyamimitra.in.",
+      benefits: [
+        '50% capital subsidy of the project cost, up to a maximum of ₹50 lakh.',
+        'Poultry Farming: Up to ₹25 lakh subsidy.',
+        'Sheep & Goat Farming: Subsidy from ₹10 lakh to ₹50 lakh.',
+        'Piggery: Up to ₹30 lakh subsidy.',
+        'Feed & Fodder Units: Up to ₹50 lakh subsidy.',
+      ],
+      eligibility: [
+        'Eligible entities include Individuals, FPOs, SHGs, JLGs, FCOs, and Section 8 companies.',
+        'Must own or have leased land for the project.',
+        'Must possess necessary training or experience.',
+        'A loan must be sanctioned for the project from a scheduled bank or financial institution (or provide a bank guarantee for self-financed projects).',
+      ],
+      applicationProcess: [
+        'Submit online application and DPR on nlm.udyamimitra.in portal.',
+        'Application is screened by the State Implementing Agency (SIA).',
+        'Applicant secures a loan and the sanction letter is uploaded by the lender.',
+        'SIA recommends the application to the State Level Executive Committee (SLEC).',
+        'Final approval is given by the Department of Animal Husbandry and Dairying (DAHD), Government of India.',
+        'Subsidy is released to the lending institution.',
+      ],
+    },
+  },
+  {
+    id: 4,
+    slug: 'thalliki-vandanam-scheme',
+    name: 'Thalliki Vandanam Scheme',
+    governingBody: 'Andhra Pradesh Govt.',
+    sector: 'Education',
+    targetBeneficiary: 'Mothers of School Children (Class 1-12)',
+    casteEligibility: ['General'],
+    content: {
+      overview: "Replaces Jagananna Amma Vodi. Provides direct financial assistance for every school-going child to empower mothers, encourage enrollment, and ensure high attendance from Class 1 to 12.",
+      status: "Launched for the 2025-26 academic year. An administrative budget of ₹10,090.74 Crores has been sanctioned.",
+      benefits: [
+        'Annual financial assistance of ₹15,000 for each eligible child.',
+        '₹13,000 credited directly to the mother\'s bank account.',
+        '₹2,000 deducted at source for school/college maintenance fund.',
+      ],
+      eligibility: [
+        'Mother/guardian must be a resident of Andhra Pradesh.',
+        'Child must be studying in a recognized school/college in the state (Class 1-12).',
+        'Monthly household income not to exceed ₹10,000 (rural) or ₹12,000 (urban).',
+        'Student must maintain 75% attendance.',
+        'Exclusions apply for government employees, income tax payees, four-wheeler owners, and large property owners.',
+      ],
+      applicationProcess: [
+        'Data-driven process; no separate application required.',
+        'Education departments collect Aadhaar-linked data.',
+        'Data is cross-verified with other government databases.',
+        'Provisional lists are published at Grama/Ward Sachivalayams for social audit.',
+        'Grievances can be filed at the Sachivalayam for re-verification.',
+        'Final amount is disbursed to the mother\'s Aadhaar-linked bank account.',
+      ],
+      checkStatus: "Status checking involves verifying inclusion in the beneficiary list by visiting the local Grama/Ward Sachivalayam.",
+    },
+  },
+  {
+    id: 5,
+    slug: 'jagananna-vidya-deevena',
+    name: 'Jagananna Vidya Deevena (RTF)',
+    governingBody: 'Andhra Pradesh Govt.',
+    sector: 'Education',
+    targetBeneficiary: 'Post-Metric Students (SC/ST/BC/EBC etc.)',
+    casteEligibility: ['SC', 'ST', 'BC', 'EWS', 'Kapu', 'Minorities'],
+    content: {
+      overview: "A full fee reimbursement (RTF) program to make higher education accessible for students from economically weaker sections. It covers complete college fees for post-metric courses (ITI to Ph.D.).",
+      status: "Active and a cornerstone of the state's higher education policy. All processes are managed through the Jnanabhumi portal.",
+      benefits: [
+        'Reimbursement of full tuition fee, special fees, and examination fees as fixed by the government.',
+        'Amount is credited directly to the college\'s account in quarterly installments.',
+      ],
+      eligibility: [
+        'Students from SC, ST, BC, EBC (other than Kapu), Kapu, Minority, and Differently Abled categories.',
+        'All post-metric courses in affiliated Government, Aided, and Private colleges.',
+        'Annual family income must be ≤ ₹2.5 lakh.',
+        'Land holding limits: ≤ 10 acres wetland or ≤ 25 acres dry land.',
+        'Exclusions: Private/Deemed University students, distance education, management quota admissions, and families with government employees/income tax payees.',
+      ],
+      applicationProcess: [
+        'Student fills Jnanabhumi Scholarship Application Form (J-SAF) and submits to college at admission.',
+        'College verifies and submits the application online via Jnanabhumi portal.',
+        'Student provides biometric authentication at a MeeSeva center to complete submission.',
+        'Renewals are initiated by the college, with biometric authentication at the college itself.',
+      ],
+      documents: [
+        'Aadhaar Card',
+        'Income Certificate',
+        'Caste Certificate',
+        'College Admission Certificate and Fee Receipt',
+        'Bank Account Details of the student\'s mother',
+        'Residential Proof',
+      ],
+      checkStatus: "Check status on the Jnanabhumi portal using the 'VIEW/PRINT SCHOLARSHIP APPLICATION STATUS' link with the Application ID.",
+    },
+  },
+  {
+    id: 6,
+    slug: 'jagananna-vasathi-deevena',
+    name: 'Jagananna Vasathi Deevena (MTF)',
+    governingBody: 'Andhra Pradesh Govt.',
+    sector: 'Education',
+    targetBeneficiary: 'Post-Metric Students (for hostel/mess)',
+    casteEligibility: ['SC', 'ST', 'BC', 'EWS', 'Kapu', 'Minorities'],
+    content: {
+      overview: "A complementary program to Vidya Deevena, covering hostel and mess (Maintenance and Tuition Fees - MTF) expenses for students in higher education.",
+      status: "Active, running concurrently with Vidya Deevena. Disbursements in two annual installments (July, December) to the mother's bank account.",
+      benefits: [
+        'ITI Students: ₹10,000 per year.',
+        'Polytechnic Students: ₹15,000 per year.',
+        'Degree and above Courses: ₹20,000 per year.',
+      ],
+      eligibility: [
+        'Eligibility criteria are identical to the Jagananna Vidya Deevena scheme.',
+      ],
+      applicationProcess: [
+        'Application is integrated with the Vidya Deevena application on the Jnanabhumi portal.',
+        'Students typically apply for both schemes simultaneously through their colleges.',
+      ],
+      checkStatus: "Status can be tracked through the Jnanabhumi portal using the student's application ID.",
+    },
+  },
+  {
+    id: 7,
+    slug: 'skill-development-schemes',
+    name: 'Skill Development Schemes (DDU-GKY, PMKVY)',
+    governingBody: 'Central & State Govt.',
+    sector: 'Skill Development',
+    targetBeneficiary: 'Unemployed Youth',
+    casteEligibility: ['General'],
+    content: {
+      overview: "Focus on skilling unemployed youth to enhance employability, with SEEDAP as the nodal agency. Programs target rural youth and school/college dropouts with market-driven training.",
+      status: "Active.",
+      benefits: [
+        'Deen Dayal Upadhyaya Grameen Kaushalya Yojana (DDU-GKY): Free residential skill training for poor rural youth (18-35) with placement support.',
+        'Pradhan Mantri Kaushal Vikas Yojana (PMKVY): Free short-term training and certification. SDI in Visakhapatnam offers free training, accommodation, and placement.',
+        'SEEDAP State-Level Retail Training Program (SRTP): Training for the retail sector in 18 centers.',
+        'Andhra Yuva Shakti (AYS): Focus on entrepreneurship in agriculture and allied sectors.',
+      ],
+      eligibility: [
+        'Generally targets unemployed youth between 18 and 35 years old.',
+        'Focus on those from rural and economically weaker backgrounds.',
+      ],
+      applicationProcess: [
+        'Information on training programs and job fairs is available on the SEEDAP website (seedap.ap.gov.in).',
+        'Candidates can contact district training centers listed on the portal.',
+      ],
+    },
+  },
+  {
+    id: 8,
+    slug: 'dr-ysr-aarogyasri-scheme',
+    name: 'Dr. YSR Aarogyasri Scheme',
+    governingBody: 'Andhra Pradesh Govt.',
+    sector: 'Health',
+    targetBeneficiary: 'BPL Families, Low-Income Groups',
+    casteEligibility: ['General'],
+    content: {
+      overview: "The state's premier health insurance scheme providing quality, end-to-end cashless healthcare for identified secondary and tertiary care diseases to BPL families.",
+      status: "Fully active and enhanced. As of July 2025, the program provides free healthcare to ~4.25 crore citizens with an increased financial coverage limit.",
+      benefits: [
+        'Financial coverage up to ₹25 lakh per family per annum.',
+        'Completely cashless treatment at a network of empanelled hospitals for over 2,446 identified diseases.',
+        'Coverage includes hospitalization, diagnostics, medicines, follow-up care, and food.',
+      ],
+      eligibility: [
+        'All families holding a White Ration Card (or Rice Card).',
+        'Families with an annual income up to ₹5 lakh.',
+        'Land/property and vehicle ownership limits apply.',
+        'YSR Pension Kanuka and Jagananna Vidya/Vasathi Deevena cardholders are automatically eligible.',
+      ],
+      applicationProcess: [
+        'Online Application: Through Grama Ward Sachivalayam portal or Navasakam website (navasakam2.apcfss.in).',
+        'Offline Application: Submit filled Performa at the nearest Grama/Ward Sachivalayam.',
+      ],
+      documents: [
+        'Aadhaar Card',
+        'White Ration Card / Rice Card',
+        'Income Certificate or Salary Certificate',
+        'Proof of Residence',
+        'Passport-sized Photographs',
+      ],
+      checkStatus: "Visit www.ysraarogyasri.ap.gov.in, navigate to 'Patient Services' -> 'Health Card Status', and enter your Employee/Pensioner ID.",
+    },
+  },
+   {
+    id: 9,
+    slug: 'ysr-arogya-asara',
+    name: 'YSR Arogya Asara',
+    governingBody: 'Andhra Pradesh Govt.',
+    sector: 'Health',
+    targetBeneficiary: 'Post-Operative Patients',
+    casteEligibility: ['General'],
+    content: {
+      overview: "A supplement to the Aarogyasri program, providing direct financial assistance to patients during their post-operative recovery period to compensate for loss of wages.",
+      status: "Active, functioning in tandem with Aarogyasri. Approximately 25 lakh patients have benefited as of July 2025.",
+      benefits: [
+        'Financial assistance of up to ₹5,000 per month to patients during their prescribed recovery period after discharge.',
+      ],
+      eligibility: [
+        "Patients who have undergone treatment under the Dr. YSR Aarogyasri scheme and require a post-operative recovery period.",
+      ],
+      applicationProcess: [
+        "The benefit is typically processed automatically for eligible patients identified through the Aarogyasri system. The hospital and Aarogyasri Mitras facilitate the process."
+      ]
+    },
+  },
+  {
+    id: 10,
+    slug: 'ysr-pension-kanuka-ntr-bharosa',
+    name: 'YSR Pension Kanuka / NTR Bharosa',
+    governingBody: 'Andhra Pradesh Govt.',
+    sector: 'Social Security',
+    targetBeneficiary: 'Elderly, Widows, Disabled, etc.',
+    casteEligibility: ['General'],
+    content: {
+      overview: "A comprehensive social security pension scheme providing a monthly pension to support the elderly, widows, persons with disabilities, and other marginalized groups.",
+      status: "Active, with regular monthly disbursements. Name may vary with administration, but the core structure is consistent.",
+      benefits: [
+        '₹2,250 per month: For Old Age (60+), Widows (18+), Weavers (50+), Toddy Tappers (50+), Fishermen (50+), Single Women, and Traditional Cobblers.',
+        '₹3,000 per month: For Persons with Disability (40%+) and Transgender individuals (18+).',
+        '₹10,000 per month: For persons with Chronic Kidney Disease Undergoing Dialysis (CKDU).',
+      ],
+      eligibility: [
+        'Must belong to a BPL household (White Ration Card holder).',
+        'Family income below ₹10,000/month (rural) or ₹12,000/month (urban).',
+        'Standard exclusions for government employees, pensioners, and four-wheeler owners apply.',
+      ],
+      applicationProcess: [
+        'Application and verification are managed at the local level through Grama/Ward Sachivalayams.',
+        'The MPDO (rural) and Municipal Commissioner (urban) are the sanctioning authorities.',
+      ],
+    },
+  },
+  {
+    id: 11,
+    slug: 'ysr-jagananna-housing-colonies',
+    name: 'YSR Jagananna Housing Colonies',
+    governingBody: 'Andhra Pradesh Govt.',
+    sector: 'Housing',
+    targetBeneficiary: 'BPL Families',
+    casteEligibility: ['SC', 'ST', 'BC', 'Minorities', 'General'],
+    content: {
+      overview: "A massive state-led housing program to provide affordable permanent (pucca) houses to the homeless poor by developing large, integrated housing colonies with all basic amenities.",
+      status: "Actively under implementation with a target to construct 10 lakh houses between April 2025 and March 2026.",
+      benefits: [
+        'House site provided free of cost.',
+        'Financial assistance of ₹1.8 lakh per house for construction.',
+        'Houses are constructed using energy-efficient methods.',
+        'House pattas are registered in the name of the female head of the household.',
+      ],
+      eligibility: [
+        'Permanent resident of Andhra Pradesh.',
+        'Family must belong to BPL category and possess a White Ration Card.',
+        'Applicant or family members must not own a permanent house or land in the state.',
+        'Priority is given to families from SC/ST/OBC and Minority communities.',
+      ],
+      applicationProcess: [
+        'Online: Apply through the official APSHCL website (housing.ap.gov.in).',
+        'Offline: Submit applications at the nearest Grama/Ward Sachivalayam or Meeseva center.',
+      ],
+      documents: [
+        'Aadhaar Card',
+        'Domicile Certificate / Proof of Residence',
+        'Income Certificate',
+        'Caste Certificate (if applicable)',
+        'Bank Account Passbook',
+        'Passport-size Photograph',
+      ],
+      checkStatus: "Track status on the APSHCL portal (housing.ap.gov.in) using the 'Beneficiary Search' feature.",
+    },
+  },
+  {
+    id: 12,
+    slug: 'pradhan-mantri-awas-yojana',
+    name: 'Pradhan Mantri Awas Yojana (PMAY-U & G)',
+    governingBody: 'Central Govt.',
+    sector: 'Housing',
+    targetBeneficiary: 'EWS, LIG, MIG Families',
+    casteEligibility: ['General'],
+    content: {
+      overview: "The Government of India's flagship mission for 'Housing for All,' implemented via PMAY-Urban and PMAY-Gramin components. APSHCL is the nodal agency in Andhra Pradesh.",
+      status: "Active. Deadline for completing PMAY-U sanctioned houses extended, so construction and support are ongoing in 2025.",
+      benefits: [
+        'PMAY-U: Central assistance of ₹1.5 lakh per house for eligible EWS beneficiaries.',
+        'PMAY-G: Financial assistance for constructing pucca houses in rural areas.',
+      ],
+      eligibility: [
+        'PMAY-U: Caters to Economically Weaker Sections (EWS), Low-Income Groups (LIG), and Middle-Income Groups (MIG). The family must not own a pucca house in India.',
+        'PMAY-G: Targets houseless families and those in kutcha/dilapidated houses in rural areas, selected from SECC 2011 data and Awas+ survey.',
+      ],
+      applicationProcess: [
+        'Apply online through the respective national portals (pmaymis.gov.in for Urban) or through Common Service Centers (CSCs).',
+      ],
+      checkStatus: "Check beneficiary lists on the official PMAY websites (PMAY-U 'Search Beneficiary' feature, PMAY-G via rhreporting.nic.in).",
+    },
+  },
+  {
+    id: 13,
+    slug: 'ysr-cheyutha-scheme',
+    name: 'YSR Cheyutha Scheme',
+    governingBody: 'Andhra Pradesh Govt.',
+    sector: 'Women Empowerment',
+    targetBeneficiary: 'Women (45-60 yrs) from SC/ST/BC/Minority',
+    casteEligibility: ['SC', 'ST', 'BC', 'Minorities'],
+    content: {
+      overview: "A targeted financial empowerment program for women from SC, ST, BC, and Minority communities, providing substantial financial assistance over four years to women aged 45-60 to foster economic self-sufficiency.",
+      status: "Active and ongoing, with regular implementation cycles.",
+      benefits: [
+        'Total financial benefit of ₹75,000 per woman.',
+        'Disbursed in four equal annual installments of ₹18,750.',
+      ],
+      eligibility: [
+        'Women from SC, ST, BC, and Minority communities, aged 45-60.',
+        'Income and property limits apply.',
+        'Exclusions: YSR Pension Kanuka beneficiaries, government employees, income tax payees, four-wheeler owners.',
+      ],
+      applicationProcess: [
+        'Applications are processed through the Grama/Ward Sachivalayam system.',
+        'Submit the application form to the local village/ward volunteer.',
+        'Field verification is conducted by secretariat staff.',
+      ],
+      documents: [
+        'Aadhaar Card',
+        'Caste Certificate',
+        'Income Certificate',
+        'Domicile Certificate',
+        'Age Proof (Birth Certificate, Voter ID, etc.)',
+        'Bank Account Passbook',
+      ],
+      checkStatus: "Check application and payment status online through the Navasakam Beneficiary Management Portal using Aadhaar number.",
+    },
+  },
+  {
+    id: 14,
+    slug: 'aadabidda-nidhi-scheme',
+    name: 'Aadabidda Nidhi Scheme',
+    governingBody: 'Andhra Pradesh Govt.',
+    sector: 'Women Empowerment',
+    targetBeneficiary: 'Women (19-59 yrs)',
+    casteEligibility: ['General'],
+    content: {
+      overview: "A new initiative announced in 2024 to provide direct monthly financial assistance to women across the state to support their financial needs and empowerment.",
+      status: "Announced and slated for implementation. Official guidelines and application timelines are expected.",
+      benefits: [
+        'Proposed monthly financial assistance of ₹1,500 per eligible woman via DBT.',
+      ],
+      eligibility: [
+        'Domiciled women residents of Andhra Pradesh.',
+        'Proposed age bracket is 19 to 59 years.',
+        'Women receiving similar benefits from other schemes are likely to be excluded.',
+      ],
+      applicationProcess: [
+        'Mode of application is yet to be announced.',
+        'Likely to be processed through a dedicated portal or the Grama/Ward Sachivalayam network.',
+      ],
+      documents: [
+        'Aadhaar Card',
+        'Address Proof',
+        'Income Certificate',
+        'Age Proof',
+        'Bank Account Details',
+      ],
+    },
+  },
+  {
+    id: 15,
+    slug: 'girl-child-protection-scheme',
+    name: 'Girl Child Protection Scheme',
+    governingBody: 'Andhra Pradesh Govt.',
+    sector: 'Child Welfare',
+    targetBeneficiary: 'Girl Children',
+    casteEligibility: ['General'],
+    content: {
+      overview: "Implemented by the Women Development and Child Welfare Department to combat gender discrimination by making a direct financial investment in the future of girl children.",
+      status: "Active. The National Portal of India provides access to detailed information and application forms.",
+      benefits: [
+        'Provides a maturity amount to the girl child upon reaching a certain age, provided conditions like completion of education are met.',
+      ],
+      eligibility: [
+        'Specific eligibility criteria are available through the department\'s official channels.',
+      ],
+      applicationProcess: [
+        'Detailed procedures are available on the National Portal of India and through the department.',
+      ],
+    },
+  },
+  {
+    id: 16,
+    slug: 'economic-support-schemes-obmms',
+    name: 'Economic Support Schemes (OBMMS)',
+    governingBody: 'Andhra Pradesh Govt.',
+    sector: 'Entrepreneurship',
+    targetBeneficiary: 'SC, BC, ST, Minority, Kapu Communities',
+    casteEligibility: ['SC', 'ST', 'BC', 'EWS', 'Kapu', 'Minorities'],
+    content: {
+      overview: "A suite of economic support schemes managed through the AP Online Beneficiary Management & Monitoring System (OBMMS). Implemented by various community-specific welfare corporations to provide subsidized loans for setting up enterprises.",
+      status: "The OBMMS portal (apobmms.apcfss.in) is live and accepting applications for several corporations (Minority, BC, Kapu, EBC). Status for SC and ST corporations may vary.",
+      benefits: [
+        'Subsidized loans and financial assistance for enterprises in agriculture, transport, industries, and services.',
+        'Benefits and scheme details vary significantly by corporation.',
+      ],
+      eligibility: [
+        'Minority Corp: Age 21-55; Income < ₹1.5L (rural) or < ₹2L (urban).',
+        'BC Corp: Age 21-60; Must be BPL.',
+        'Kapu Corp: Age 21-60; Must belong to Kapu, Balija, Telaga, or Ontari sub-castes and hold a White Ration Card.',
+        'EBC & Others: Includes self-employment and support for setting up Generic Pharmacies (for pharmacy graduates).',
+      ],
+      applicationProcess: [
+        'Register on the OBMMS portal (apobmms.apcfss.in) using basic details.',
+        'Login and complete the detailed online application form.',
+        'Submit the form and take a printout for records.',
+      ],
+      documents: [
+        'Aadhaar Card',
+        'Caste Certificate',
+        'Income Certificate',
+        'Proof of Residence',
+        'Bank Account Details',
+        'Project Report for the enterprise',
+        'Driving license or relevant professional qualifications where applicable.',
+      ],
+    },
+  },
+];
