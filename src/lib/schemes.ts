@@ -508,4 +508,25 @@ export const schemes: Scheme[] = [
       ],
     },
   },
+  {
+    id: 17,
+    slug: 'stp-and-ehtp-scheme',
+    name: 'STP and EHTP Scheme',
+    governingBody: 'Central Govt.',
+    sector: 'Hardware',
+    targetBeneficiary: 'Software and Electronics Hardware Exporters',
+    casteEligibility: ['General'],
+    content: {
+      overview: 'The STP (Software Technology Park) and EHTP (Electronic Hardware Technology Park) schemes are initiatives aimed at promoting software and electronics hardware development for exports in India. These schemes provide specific benefits and eligibility criteria for interested units.',
+      status: 'Active',
+      benefits: [
+        'Duty-free import of capital goods and raw materials.',
+        'Simplified customs procedures.',
+        'Tax incentives for eligible businesses.',
+        'Units operating under the STP and EHTP schemes are entitled to import specified goods duty-free, reducing operational costs and promoting the development of software and electronics hardware for exports.',
+      ],
+      eligibility: ['Units interested in software and electronics hardware development for exports are eligible. Specific criteria apply and can be found in the official scheme documents.'],
+      applicationProcess: ["For specific details about the application process, please refer to the official document at https://taxindiaonline.com/RC2/pdfdocs/cm/cm22d.pdf"],
+    },
+  },
 ];
